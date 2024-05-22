@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)https://booking.shankuswaterpark.com/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shankus Water Park &amp; Resort</title>
+	<link href="./Shankus Water Park &amp; Resort0_files/css" rel="stylesheet">
+	<link rel="stylesheet" href="./Shankus Water Park &amp; Resort0_files/material-design-iconic-font.min.css">
+	<link rel="stylesheet" href="./Shankus Water Park &amp; Resort0_files/style.css">
+	<link rel="stylesheet" href="./Shankus Water Park &amp; Resort0_files/font-awesome.min.css"> 
+	<link rel="shortcut icon" href="./Shankus Water Park &amp; Resort0_files/logo.png"> 
+	<link rel="stylesheet" href="./Shankus Water Park &amp; Resort0_files/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./Shankus Water Park &amp; Resort0_files/slick-loader.min.css">
+
+	<style>
+		.hidden1 {
+			display: none;
+		}
+
+		.hidden2 {
+			display: none;
+		}
+	</style>
+
+	<script src="./Shankus Water Park &amp; Resort0_files/jquery-3.2.1.min.js.download"></script>
+	<script src="./Shankus Water Park &amp; Resort0_files/jquery-ui.js.download"></script>
+
+</head>
+
+<body>
+	<div class="main2">
+		<div class="container container2">
+			<img src="./Shankus Water Park &amp; Resort0_files/logo.png"> 
+			<div class="stepper-wrapper">
+				<div class="stepper-item active">
+					<div class="step-counter">1</div>
+					<div class="step-name">TICKETS</div>
+				</div>
+				<div class="stepper-item">
+					<div class="step-counter">2</div>
+					<div class="step-name">YOUR DETAILS</div>
+				</div>
+				<div class="stepper-item">
+					<div class="step-counter">3</div>
+					<div class="step-name">REVIEW ORDER</div>
+				</div>
+				<div class="stepper-item">
+					<div class="step-counter">4</div>
+					<div class="step-name">PAYMENT</div>
+				</div>
+				<div class="stepper-item">
+					<div class="step-counter">5</div>
+					<div class="step-name">SUMMARY</div>
+				</div>
+			</div>
+			
+		</div> 
+	</div>   
+		
+	<div class="main">
+		<div class="container">
+			<div class="content clearfix">
+			
+
+				<div class="show_ticket_outer2">
+					<p>
+						<span style="padding-right:5px;">Select Your Booking Date:</span>
+						<input type="text" name="ticket_date" id="datepicker" class="smallDateTextbox hasDatepicker" autocomplete="off">
+						<button class="showhid2" onclick="changedate()">Continue</button>
+			<span style="float:right; padding-right:30px; padding-top:10px; margin-right:15px;"><strong>Total Amount: 4000</strong><a class="showhid2" href="https://booking.shankuswaterpark.com/step2.php">Proceed</a></span>						
+					</p>
+
+					<p>
+						
+					</p>
+
+				</div>
+
+				<fieldset role="tabpanel" class="body current padding-top30 padding-bottom30">
+					<div class="fieldset-content">
+
+                                                <div class="show_ticket_outer">
+							<div class="fullwidth">
+								<div id="ticket_img">
+									<img src="./Shankus Water Park &amp; Resort0_files/multi-park-logo_0.png">
+								</div>
+								<div class="title-des">
+									<div id="ticket_title">SHANKUS WONDERFUL(MS)</div>
+									<div id="ticket_decripttion">
+										<p id="ticket_decripttion0">-Inclusion : Entry Ticket<br>   </p>
+									</div>
+								</div>
+								<div class="select_btn">
+									<div class="main_price_div"> 1000 INR </div>
+									<!-- <a href="step2.html" role="menuitem" class="showhide">BOOK</a>  -->
+									<button class="showhide showButton0 show0" style="display: none;">SHOW</button>
+									<button class="showhide hideButton0 hide0">HIDE</button>
+								</div>
+							</div>
+							<div class="hide0 ticket-data">
+								<div class="sp-quantity">
+
+									<div class="passenger_line">
+									  
+										<div class="passenger_type adult">
+											<h1>No. of Tickets<span class="w-line"></span></h1>
+										</div>
+										<div class="cost_pto"><span class="cost_per_ticket" id="cost_per_ticket0">1000</span>&nbsp;INR</div>
+										<div class="total_amt"><span class="total_cost" id="total_cost0">
+										4000										
+										</span>&nbsp;INR</div>  
+										
+																				<div class="input-group plus-minus-input">
+											<div class="input-group-button right-align">
+												<button type="button" class="button hollow circle" data-quantity="minus0" data-field="quantity0" disabled="">
+													- </button>
+											</div>
+											<input class="input-group-field" type="number" name="quantity0" id="quantity0" value="4" disabled="">
+											<div class="input-group-button left-align">
+												<button type="button" class="button hollow circle" data-quantity="plus0" data-field="quantity0" disabled=""> +
+												</button>
+											</div>
+										</div>
+																					<script>
+											jQuery(document).ready(function () {
+												// This button will increment the value
+												$('[data-quantity="plus0"]').click(function (e) {
+													// Stop acting like a button
+													e.preventDefault();
+													// Get the field name
+													fieldName = $(this).attr('data-field');
+													// Get its current value
+													var currentVal = parseFloat($('input[name=' + fieldName + ']').val());
+													// If is not undefined
+													if (!isNaN(currentVal)) {
+														// Increment
+                                                        $('input[name=' + fieldName + ']').val(currentVal + 1);
+                                                        let amount = parseFloat($('#cost_per_ticket0').text());
+                                                        
+                                                        $('#total_cost0').text((amount * (currentVal + 1)).toFixed(2));
+                                                        $('#final_total_cost0').text((amount * (currentVal + 1)).toFixed(2));
+													} else {
+														// Otherwise put a 0 there
+														$('input[name=' + fieldName + ']').val(0);
+													}
+												});
+												// This button will decrement the value till 0
+												$('[data-quantity="minus0"]').click(function (e) {
+													// Stop acting like a button
+													e.preventDefault();
+													// Get the field name
+													fieldName = $(this).attr('data-field');
+													// Get its current value
+													var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+													// If it isn't undefined or its greater than 0
+													if (!isNaN(currentVal) && currentVal > 0) {
+														// Decrement one
+                                                        $('input[name=' + fieldName + ']').val(currentVal - 1);
+                                                        let amount = parseFloat($('#cost_per_ticket0').text());
+                                                        
+                                                        $('#total_cost0').text((amount * (currentVal - 1)).toFixed(2));
+                                                        $('#final_total_cost0').text((amount * (currentVal - 1)).toFixed(2));
+													} else {
+														// Otherwise put a 0 there
+														$('input[name=' + fieldName + ']').val(0);
+													}
+												});
+
+												//On Input value Change
+												$('#quantity0').change(function (e) {
+													e.preventDefault();
+
+													var currentVal = $(this).val();
+													let amount = parseFloat($('#cost_per_ticket0').text());
+
+													if (!isNaN(currentVal) && currentVal > 0) {
+														$('#total_cost0').text((amount * (currentVal)).toFixed(2));
+                                                        $('#final_total_cost0').text((amount * (currentVal)).toFixed(2));
+													}
+													else
+													{
+														$('#total_cost0').text('0');
+                                                        $('#final_total_cost0').text('0');
+													}
+													
+
+												})
+											}); 
+										</script>
+
+									</div>
+
+
+								</div>
+																<p class="text-right text-danger">To update Item, please reomve from cart!</p>
+																<div class="totalcost" id="totalcost_8204">
+									Sub total :
+									<div class="tm"><span class="total_cost" id="final_total_cost0">
+									4000									</span>&nbsp;INR</div>
+									<span class="service_tax_message">Including taxes</span>
+                                </div>
+                                                                    
+									<button name="add_cart" value="Add to cart" type="button" class="showhid2 add-to-cart-class" onclick="RemoveCart(&#39;SMS&#39;)">Remove to cart</button>
+									<a name="proceed" value="step2" type="button" class="showhid2 add-to-cart-class" href="https://booking.shankuswaterpark.com/step2.php">Proceed</a>
+
+                                    							</div>
+
+                            <script type="text/javascript">
+																 $('.hide0').show();
+								 $('.show0').hide();
+								                               
+								$(function () {
+									$('.showButton0 ').click(function () {
+										$('.hide0').show();
+										$('.show0').hide();
+									});
+									$('.hideButton0').click(function () {
+										$('.hide0').hide();
+										$('.show0').show();
+									});
+								});  
+							</script>
+
+                        </div>
+                        
+						<a href="https://booking.shankuswaterpark.com/step2.php" class="showhid2 showhid3"> CONTINUE TO CUSTOMER DETAILS </a>
+
+					</div>
+
+				</fieldset>
+
+			</div>
+		</div>
+	</div>
+	
+	<footer id="colophon" class="site-footer" role="contentinfo">
+	   <div class="container">
+		  <aside class="widget-area" role="complementary" aria-label="Footer">
+			 <div class="widget-column col-md-12 col-lg-12 col-sm-12 col-xs-12">
+				<section id="custom_html-3" class="widget_text widget widget_custom_html">
+				   <div class="textwidget custom-html-widget">
+					  <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+						 <h2 class="newslatter-heading titillium-web">
+						 </h2>
+						 <p class="newslatter-subheading titillium-web">
+						 </p>
+					  </div>
+					  <div class="col-md-2 col-sm-12 col-xs-12 col-lg-2 "></div>
+					  <div class="footer-get-touch-section">
+						 <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+							<h2 class="getintouch-heading titillium-web">
+							   Get In Touch
+							</h2>
+						 </div>
+						 <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 text-center">
+							<img src="./Shankus Water Park &amp; Resort0_files/email-footer-150x150.png" alt="Email Icon">
+							<h2 class="heading titillium-web">
+							   Email
+							</h2>
+							<p class="descritpion poppins"><a href="mailto:info@waterworldresort.com">info@waterworldresort.com</a>
+							   <a href="mailto:reservations@waterworldresort.com">reservations@waterworldresort.com</a>
+							</p>
+						 </div>
+						 <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 text-center">
+							<img src="./Shankus Water Park &amp; Resort0_files/call-footer-150x150.png" alt="Call Us Icon">
+							<h2 class="heading titillium-web">
+							   Call Us
+							</h2>
+							<p class="descritpion poppins"><a href="tel:+919099080080">+91 90990 80080</a><br>
+							   <a href="tel:+919099080090">+91 90990 80090</a>
+							</p>
+						 </div>
+						 <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 text-center">
+							<img src="./Shankus Water Park &amp; Resort0_files/location-footer-150x150.png" alt="Address Icon">
+							<h2 class="heading titillium-web">
+							   Address
+							</h2>
+							<p class="descritpion poppins"><a href="mailto:info@waterworldresort.com">Ahmedabad-Mehasna Highway,
+							   Mehsana 384 435. Gujarat, India.</a>
+							</p>
+						 </div>
+						 <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 text-center">
+							<img src="./Shankus Water Park &amp; Resort0_files/email-footer-150x150.png" alt="Follow Us Icon">
+							<h2 class="heading titillium-web">
+							   Follow Us
+							</h2>
+							<p class="descritpion poppins"><a href="https://booking.shankuswaterpark.com/#"><i class="fa fa-facebook"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://booking.shankuswaterpark.com/#"><i class="fa fa-twitter"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://booking.shankuswaterpark.com/#"><i class="fa fa-google-plus"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://booking.shankuswaterpark.com/#"><i class="fa fa-linkedin"></i></a></p>
+						 </div>
+					  </div>
+				   </div>
+				</section>
+				<section id="text-3" class="widget widget_text">
+				   <div class="textwidget"></div>
+				</section>
+				<section id="custom_html-4" class="widget_text widget widget_custom_html">
+				   <div class="textwidget custom-html-widget">
+					  <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 copyright-footer text-center poppins">
+						 <p>
+							© 2019  Shankus Water Park.All Rights Reserved.| Design &amp; Developed By <a href="https://booking.shankuswaterpark.com/#"> Zero Gravity Communications </a>
+						 </p>
+					  </div>
+				   </div>
+				</section>
+			 </div>
+		  </aside>
+		  <!-- .widget-area -->
+	   </div>
+	   <!-- .wrap -->
+	</footer>
+
+
+
+
+
+	<link rel="stylesheet" href="./Shankus Water Park &amp; Resort0_files/jquery-ui.css">
+	<!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+
+	<!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+	<script>
+		$(function () {
+			$("#datepicker").datepicker({
+				minDate: "+1",
+				dateFormat: 'dd-mm-yy'
+			});
+			$( "#datepicker" ).datepicker( "setDate", "1");
+// 			$('#datepicker').on('change',function(){
+//                 changedate();
+//             });
+				    	$("#datepicker").datepicker({
+				minDate: "+1",
+				dateFormat: 'dd-mm-yy'
+			});
+			$( "#datepicker" ).datepicker( "setDate", "20-07-2023");
+			$('#datepicker').on('change',function(){
+			    changedate();
+            });
+						
+		});
+	</script>
+
+
+	<!-- <script src="vendor/jquery/jquery.min.js"></script>  -->
+	
+	<script src="./Shankus Water Park &amp; Resort0_files/bootstrap.min.js.download"></script>
+	<script src="./Shankus Water Park &amp; Resort0_files/jquery.validate.min.js.download"></script>
+	<script src="./Shankus Water Park &amp; Resort0_files/additional-methods.min.js.download"></script>
+	<script src="./Shankus Water Park &amp; Resort0_files/jquery.steps.min.js.download"></script>
+	<script src="./Shankus Water Park &amp; Resort0_files/dobpicker.js.download"></script>
+	<script src="./Shankus Water Park &amp; Resort0_files/jquery.pwstrength.js.download"></script>
+	<script src="./Shankus Water Park &amp; Resort0_files/main.js.download"></script>
+	<script src="./Shankus Water Park &amp; Resort0_files/rocket-loader.min.js.download"></script>
+	<script src="./Shankus Water Park &amp; Resort0_files/general.js.download"></script>
+	<script src="./Shankus Water Park &amp; Resort0_files/axios.min.js.download"></script>
+	<script src="./Shankus Water Park &amp; Resort0_files/slick-loader.min.js.download"></script><div class="loadingScreen"><svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-eclipse" style="background: none;"> <path ng-attr-d="{{config.pathCmd}}" ng-attr-fill="{{config.color}}" stroke="none" d="M10 50A40 40 0 0 0 90 50A40 42 0 0 1 10 50" fill="#ffffff"></path> <text style="cursor: move;" stroke="#000" xml:space="preserve" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="5" id="svg_4" y="48.875258" x="50" stroke-opacity="null" stroke-width="0" fill="#ffffff"></text> <text xml:space="preserve" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="5" id="svg_5" y="55.010217" x="50" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#ffffff"></text> </svg></div><div class="slick-loader"><svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-eclipse" style="background: none;"> <path ng-attr-d="{{config.pathCmd}}" ng-attr-fill="{{config.color}}" stroke="none" d="M10 50A40 40 0 0 0 90 50A40 42 0 0 1 10 50" fill="#ffffff"></path> <text style="cursor: move;" stroke="#000" xml:space="preserve" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="5" id="svg_4" y="48.875258" x="50" stroke-opacity="null" stroke-width="0" fill="#ffffff"></text> <text xml:space="preserve" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="5" id="svg_5" y="55.010217" x="50" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#ffffff"></text> </svg></div>
+	<script>
+        function AddCart(quantityid,price,name,code,description,cgst_rate,sgst_rate,category,classs,subclass,ispriorityTicket,isprioritypass) {
+            var quantity = parseFloat($('#'+quantityid).val());
+            var price = parseFloat(price);
+			var desc = $('#'+description).text();
+			var date = $('#datepicker').val();
+            var total_cost = quantity * price;
+			var Gstrate = 100+Number(cgst_rate)+Number(sgst_rate);
+			var basic_amount = parseFloat((total_cost/Number(Gstrate))*100);
+            var cgst_amount = basic_amount * (parseFloat(cgst_rate)/100);
+            var sgst_amount = basic_amount * (parseFloat(sgst_rate)/100);
+            var form = $('<form action="index.php" method="POST">' + 
+                '<input type="hidden" name="cname" value="' + name + '">' + 
+                '<input type="hidden" name="code" value="' + code + '">' +
+				'<input type="hidden" name="price" value="' + price + '">' +
+				'<input type="hidden" name="quantity" value="' + quantity + '">' +
+				'<input type="hidden" name="total_cost" value="' + total_cost + '">' +
+                '<input type="hidden" name="description" value="' + desc + '">' +
+                '<input type="hidden" name="cgst_rate" value="' + cgst_rate + '">' +
+                '<input type="hidden" name="sgst_rate" value="' + sgst_rate + '">' +
+                '<input type="hidden" name="cgst_amount" value="' + cgst_amount + '">' +
+                '<input type="hidden" name="sgst_amount" value="' + sgst_amount + '">' +
+                '<input type="hidden" name="category" value="' + category + '">' +
+                '<input type="hidden" name="class" value="' + classs + '">' +
+                '<input type="hidden" name="subclass" value="' + subclass + '">' +
+                '<input type="hidden" name="ispriorityTicket" value="' + ispriorityTicket + '">' +
+                '<input type="hidden" name="isprioritypass" value="' + isprioritypass + '">' +
+				'<input type="hidden" name="date" value="' + date + '">' +
+                '<input type="hidden" name="action" value="addtocart">' +
+                '<input type="submit" style="visibility:hidden;">' +
+                '</form>');
+                $(document.body).append(form);
+                $('input[type="submit"]', form).click();
+
+        }
+
+		function RemoveCart(code) {
+			var form = $('<form action="index.php" method="POST">' +
+			'<input type="hidden" name="code" value="' + code + '">' +
+			'<input type="hidden" name="action" value="removefromcart">' +
+			'<input type="submit" style="visibility:hidden;">' +
+            '</form>');
+			$(document.body).append(form);
+			$('input[type="submit"]', form).click();
+		}
+
+		function changedate(value) {
+			var r = confirm("Cart will become empty if you change the date. Would like to continue?");
+			var date =  $('#datepicker').val();
+			if (r == true) {
+			    SlickLoader.enable();
+				var form = $('<form action="index.php" method="POST">' +
+				'<input type="hidden" name="date" value="' + date + '">' +
+				'<input type="hidden" name="action" value="changedate">' +
+				'<input type="submit" style="visibility:hidden;">' +
+				'</form>');
+				$(document.body).append(form);
+				$('input[type="submit"]', form).click();
+			} else {
+
+			}
+		}
+
+	</script>
+
+
+
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"><div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all"><a class="ui-datepicker-prev ui-corner-all ui-state-disabled" title="Prev"><span class="ui-icon ui-icon-circle-triangle-w">Prev</span></a><a class="ui-datepicker-next ui-corner-all" data-handler="next" data-event="click" title="Next"><span class="ui-icon ui-icon-circle-triangle-e">Next</span></a><div class="ui-datepicker-title"><span class="ui-datepicker-month">July</span>&nbsp;<span class="ui-datepicker-year">2023</span></div></div><table class="ui-datepicker-calendar"><thead><tr><th scope="col" class="ui-datepicker-week-end"><span title="Sunday">Su</span></th><th scope="col"><span title="Monday">Mo</span></th><th scope="col"><span title="Tuesday">Tu</span></th><th scope="col"><span title="Wednesday">We</span></th><th scope="col"><span title="Thursday">Th</span></th><th scope="col"><span title="Friday">Fr</span></th><th scope="col" class="ui-datepicker-week-end"><span title="Saturday">Sa</span></th></tr></thead><tbody><tr><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">1</span></td></tr><tr><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">2</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">3</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">4</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">5</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">6</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">7</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">8</span></td></tr><tr><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">9</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">10</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">11</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">12</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">13</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">14</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">15</span></td></tr><tr><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">16</span></td><td class=" ui-datepicker-unselectable ui-state-disabled  ui-datepicker-today"><span class="ui-state-default">17</span></td><td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2023"><a class="ui-state-default" href="https://booking.shankuswaterpark.com/#">18</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2023"><a class="ui-state-default" href="https://booking.shankuswaterpark.com/#">19</a></td><td class="  ui-datepicker-current-day" data-handler="selectDay" data-event="click" data-month="6" data-year="2023"><a class="ui-state-default ui-state-active" href="https://booking.shankuswaterpark.com/#">20</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2023"><a class="ui-state-default" href="https://booking.shankuswaterpark.com/#">21</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="6" data-year="2023"><a class="ui-state-default" href="https://booking.shankuswaterpark.com/#">22</a></td></tr><tr><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="6" data-year="2023"><a class="ui-state-default" href="https://booking.shankuswaterpark.com/#">23</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2023"><a class="ui-state-default" href="https://booking.shankuswaterpark.com/#">24</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2023"><a class="ui-state-default" href="https://booking.shankuswaterpark.com/#">25</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2023"><a class="ui-state-default" href="https://booking.shankuswaterpark.com/#">26</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2023"><a class="ui-state-default" href="https://booking.shankuswaterpark.com/#">27</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2023"><a class="ui-state-default" href="https://booking.shankuswaterpark.com/#">28</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="6" data-year="2023"><a class="ui-state-default" href="https://booking.shankuswaterpark.com/#">29</a></td></tr><tr><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="6" data-year="2023"><a class="ui-state-default" href="https://booking.shankuswaterpark.com/#">30</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2023"><a class="ui-state-default" href="https://booking.shankuswaterpark.com/#">31</a></td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td></tr></tbody></table></div></body></html>

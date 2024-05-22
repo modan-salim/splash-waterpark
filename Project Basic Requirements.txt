@@ -1,0 +1,15 @@
+Project Basic Requirements
+1. HTML Strutcutre
+2. 
+
+Software Lifecycle
+
+Requirements Gathering
+
+1. Waterpark 
+
+
+Planning (HTML, CSS, JS, Bootstrap, PHP)
+Designing
+Developement
+

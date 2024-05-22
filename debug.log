@@ -1,0 +1,51 @@
+[0718/171043.663:ERROR:icu_util.cc(224)] Invalid file descriptor to ICU data received.
+[0718/171046.080:ERROR:icu_util.cc(224)] Invalid file descriptor to ICU data received.
+  <!-- <?php
+if(isset($_POST['submit']))
+{
+    //echo "ok";
+     $catId = $_POST['catId'];
+     $catName = $_POST['catName'];
+
+    // echo $catId;
+     //echo $catName;
+    $catImg = $_FILES['catImg']["name"];
+
+    //echo $catImg;
+
+    $oldImg = $_POST["oldImg"];
+    //echo $oldImg;
+    $flag = "0";
+    if($catImg == "")
+    {
+        $query="update categorys set catId='$catId',catName='$catName',catImg='$oldImg' where catId='$catId'";
+        $result=mysqli_query($con,$query);
+        if($result)
+        {
+            $flag = "1";
+        }
+    }
+    else
+    {
+        $query="update categorys set catId='$catId',catName='$catName',catImg='$catImg' where catId='$catId'";
+        $result=mysqli_query($con,$query);
+        move_uploaded_file($_FILES["catImg"]["tmp_name"],"catImages/".$catImg);
+        if($result)
+        {
+            $flag = "1";
+        }
+    }
+
+
+    if($flag == "1")
+    {
+        echo "<script>alert('Record Updated successfully')</script>";
+        echo "<script>window.location.href='admin-categorys-view.php' </script>";
+    }
+    else
+    {
+        echo mysqli_error($con);
+    }
+}
+?>
+ -->
